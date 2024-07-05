@@ -50,7 +50,6 @@ body{
     width: 0; /* Garis samping tidak terlihat saat aktif */
 }
 
-
 .navbar-toggler{
     border: none;
     font-size: 1.25rem;
@@ -90,6 +89,7 @@ body{
         visibility: visible;
     }
 }
+
 .hero-section{
     background-size: cover;
     width: 100%;
@@ -317,5 +317,19 @@ a:hover{
 	width: 150px;
 	padding: 12px 0;
 }
-    
+} 
+
+/*style finde job*/
+.wfo{
+    padding-top: 3%;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+}
+.wfh{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
 }
