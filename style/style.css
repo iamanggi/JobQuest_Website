@@ -8,47 +8,6 @@ body{
     background-color: #d5d4d4;
     height: 80px;
 }
-.Login-button {
-    position: relative;
-    display: inline-flex;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-size: 14px;
-    color: white;
-    font-weight: 500;
-    background-color: #9F2634; /* Warna latar belakang saat tidak dihover */
-    border: 2px solid #9F2634;
-    text-decoration: none;
-    transition: 0.3s background-color, 0.3s color, 0.3s border-color;
-}
-
-.Login-button:hover {
-    background-color: transparent; /* Latar belakang transparan saat dihover */
-    color: #000000; /* Warna teks saat dihover */
-}
-
-.Login-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: transparent; /* Latar belakang transparan saat tidak dihover */
-    transition: .3s;
-    z-index: -1;
-    transform: scaleX(0); /* Skala awalnya menjadi 1, agar terlihat saat tidak dihover */
-    transform-origin: left;
-}
-
-.Login-button:hover::before {
-    background: #9F2634; /* Latar belakang garis samping saat dihover */
-}
-
-.Login-button:active::before, .Login-button:focus::before {
-    background: #9F2634; /* Latar belakang garis samping saat aktif */
-    width: 0; /* Garis samping tidak terlihat saat aktif */
-}
 
 .navbar-toggler{
     border: none;
@@ -222,6 +181,8 @@ a:hover{
     background: rgb(238, 234, 234);
     margin-bottom: 30px;
     transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -250,6 +211,7 @@ a:hover{
 .left{
     background: rgb(212, 210, 213);
     padding: 200px 98px;
+    margin-left: 60px;
 }
 
 .left h2{
@@ -257,6 +219,7 @@ a:hover{
     color: rgb(0, 0, 0);
     font-weight: 700;
     font-size: 48px;
+    text-align: center;
 }
 
 .left h2 span{
@@ -283,15 +246,16 @@ a:hover{
 }
 .right button {
 	border: none;
-	border-radius: 0;
+	border-radius: 10px;
 	background: #252525;
-	width: 180px;
+	width: 560px;
 	color: #fff;
 	padding: 15px 0;
 	display: inline-block;
 	font-size: 16px;
 	margin-top: 20px;
 	cursor: pointer;
+
 }
 .right button:hover{
     background-color: #252525;
@@ -329,7 +293,7 @@ a:hover{
 
 /*style finde job*/
 .wfo{
-    padding-top: 3%;
+    margin-top: 80px;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -343,5 +307,76 @@ a:hover{
 }
 
 .col-md-4{
-    padding-top: 5%;
+    padding-top: 2%;
 }
+
+.text-center{
+    font-weight: 700;
+}
+
+.card-title{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-text{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.card-body{
+    margin: 4px;
+}
+
+/* CSS untuk section dan container */
+#cardAbout {
+    padding: 20px;
+    background-color: #f8f9fa; /* Warna latar belakang */
+  }
+  
+  /* CSS untuk card-item */
+  .card-item {
+    background-color: #ffffff; /* Warna latar belakang kartu */
+    border-radius: 8px; /* Border radius untuk sudut kartu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan (shadow) untuk efek kartu */
+    transition: transform 0.3s ease; /* Transisi saat hover */
+  }
+  
+  .card-item:hover {
+    transform: translateY(-5px); /* Efek mengangkat sedikit kartu saat dihover */
+  }
+  
+  /* CSS untuk gambar di dalam kartu */
+  .card-item img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* CSS untuk judul dan teks di dalam kartu */
+  .title {
+    font-weight: bold; /* Judul kartu menjadi tebal */
+    font-size: 27px;
+    text-align: center;
+  }
+  
+  .text {
+    color: #000000; /* Warna teks pada kartu */
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  /* CSS untuk tombol Detail di dalam kartu */
+  .btn-primary {
+    background-color: #007bff; /* Warna latar belakang tombol */
+    border-color: #007bff; /* Warna border tombol */
+    
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9; /* Warna latar belakang tombol saat dihover */
+    border-color: #0062cc; /* Warna border tombol saat dihover */
+  }
+  

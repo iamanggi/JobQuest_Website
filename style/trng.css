@@ -1,0 +1,126 @@
+#cardAbout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+  }
+  
+  .card-item {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+  }
+  
+  .card-item img {
+    transition: transform 0.3s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 260px;
+  }
+  
+  .card-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .card-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    color: #034e98;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .card-item:hover .card-title {
+    color: rgb(172, 20, 35); /* Change color on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a slight text shadow */
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: rgb(91, 89, 89);
+    margin-left: 10px;
+}
+
+.icons span {
+    margin-bottom: 5px; /* jarak antar span */
+}
+
+.icons .fas.fa-calendar-alt {
+    margin-bottom: 5px; /* jarak dari icon calendar ke span berikutnya */
+}
+
+.icons .discount-label {
+  margin-left: 55px;
+    background-color: #54c41c;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.icons .original-price {
+    text-decoration: line-through; /* garis coret pada harga asli */
+    margin-right: 5px; /* jarak antara harga asli dan diskon */
+}
+
+.icons .discounted-price {
+    font-weight: bold; /* tebal untuk harga diskon */
+    color: rgb(49, 135, 255);
+}
+
+.icons span:nth-child(2n) {
+  justify-self: center; /* Center items in the second column */
+}
+
+.icons span:nth-child(3n), .icons span:nth-child(5n) {
+  justify-self: end; /* Right-align items in the third column */
+}
+.icons span:nth-child(4n) {
+  justify-self: start; /* Right-align items in the third column */
+}
+.icons i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.icons span:nth-child(5) {
+  grid-column: 3; /* Move the 5th icon to the 6th column */
+}
+
+@media (max-width: 600px) {
+  .icons {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for narrower screens */
+  }
+}
+
+.card-text{
+  margin: 20px;
+}
+  
+.modal-title {
+  font-size: 1.5rem; /* Ukuran font judul */
+  font-weight: bold; /* Ketebalan font judul */
+  margin: 0; /* Margin nol untuk menghindari spasi tambahan */
+  line-height: 1.5; /* Jarak baris yang diinginkan */
+  text-transform: uppercase;
+}
+

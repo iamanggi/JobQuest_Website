@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND JOBS</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesomee/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./style/trng.css">
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">
+                  <img src="Img/logo.png" style="width: 100px; height: auto;" alt="Logo">
+                </a>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="Img/logo.png" style="width: 100px; height: auto;" alt="Logo">
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end ms-3 flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2 active " aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    </ul>
+                    </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <div id="cardAbout" class="container-fluid mt-4">
+        <div class="d-flex justify-content-center align-items-center h-100 w-100 flex-column">
+            <div class="row mx-5">
+                <!-- Row 1 -->
+                <div class="col-md-4 mb-3 ">
+                    <div class="card-item" id="card1">
+                        <img src="./Img/Plthnbr1.jpg" class="img-fluid" alt="pythonlogo"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Linux Fundamental</h5>
+                            <p class="card-text mb-4 mt-4">
+                                By Group_C2
+                                <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                            </p>
+                            <div class="icons">
+                                <span><i class="fas fa-calendar-alt"></i> 15 Jul 2024 s/d 16 Jul 2024</span>
+                                <span>
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="prices">
+                                        <span class="original-price">Rp. 4.500.000</span>
+                                        <span class="discounted-price">Rp. 3.500.000</span>
+                                        <span class="discount-label">22% off</span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i> (4.5) Penilaian
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <button type="button" class="btn btn-primary mb-4 ms-4 px-4" data-bs-toggle="modal" data-bs-target="#modal1">Detail</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-3">
+                    <div class="card-item" id="card2">
+                        <img src="./Img/plthbru2.jpg" class="img-fluid" alt="pythonlogo"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Software Defined Data Center with Proxmox</h5>
+                            <p class="card-text">
+                                By Group_C2
+                                <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                            </p>
+                            <div class="icons">
+                                <span><i class="fas fa-calendar-alt"></i> 05 Aug 2024 s/d 09 Aug 2024</span>
+                                <span>
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="prices">
+                                        <span class="original-price">Rp. 12.500.000</span>
+                                        <span class="discounted-price">Rp. 10.000.000</span>
+                                        <span class="discount-label">20% off</span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i> (4.5) Penilaian
+                                </span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary mb-4 ms-4 px-4" data-bs-toggle="modal" data-bs-target="#modal2">Detail</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-3">
+                    <div class="card-item" id="card3">
+                        <img src="./Img/plthnbr3.jpg" class="img-fluid" alt="pythonlogo"/>
+                        <div class="card-body">
+                            <h5 class="card-title">MikroTik Certified Network Associate (MTCNA)</h5>
+                            <p class="card-text">
+                                By Group_C2
+                                <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                            </p>
+                            <div class="icons">
+                                <span><i class="fas fa-calendar-alt"></i> 29 Jul 2024 s/d 31 Jul 2024</span>
+                                <span>
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="prices">
+                                        <span class="original-price">Rp. 8.500.000</span>
+                                        <span class="discounted-price">Rp. 7.500.000</span>
+                                        <span class="discount-label">11% off</span>
+                                    </span>
+                                </span>
+                                
+                            <span><i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i> (4.6) Penilaian</span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary mb-4 ms-4 px-4" data-bs-toggle="modal" data-bs-target="#modal3">Detail</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Row 2 -->
+            <div class="row mx-5">
+                <div class="col-md-4 mb-3">
+                    <div class="card-item" id="card4">
+                        <img src="./Img/pthnbaru4.jpg" class="img-fluid" alt="pythonlogo"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Linux Network Services</h5>
+                            <p class="card-text mb-4 mt-4">
+                                By Group_C2
+                                <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                            </p>
+                            <div class="icons">
+                                <span><i class="fas fa-calendar-alt"></i> 16 Jul 2024 s/d 17 Jul 2024</span>
+                                <span>
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="prices">
+                                        <span class="original-price">Rp. 4.500.000</span>
+                                        <span class="discounted-price">Rp. 3.500.000</span>
+                                        <span class="discount-label">22% off</span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i> (4.5) Penilaian
+                                </span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary mb-4 ms-4 px-4" data-bs-toggle="modal" data-bs-target="#modal4">Detail</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-3">
+                    <div class="card-item" id="card5">
+                        <img src="./Img/plthnbr5.jpg" class="img-fluid" alt="pythonlogo"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Administering Network Operation Center</h5>
+                            <p class="card-text">
+                                By Group_C2
+                                <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                            </p>
+                            <div class="icons">
+                                <span><i class="fas fa-calendar-alt"></i> 09 Sep 2024 s/d 11 Sep 2024</span>
+                                <span>
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="prices">
+                                        <span class="original-price">Rp. 7.500.000</span>
+                                        <span class="discounted-price">Rp. 6.500.000</span>
+                                        <span class="discount-label">13% off</span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i> (4.5) Penilaian
+                                </span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary mb-4 ms-4 px-4" data-bs-toggle="modal" data-bs-target="#modal5">Detail</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-3">
+                    <div class="card-item" id="card6">
+                        <img src="./Img/plthnbr6.jpg" class="img-fluid" alt="pythonlogo"/>
+                        <div class="card-body">
+                            <h5 class="card-title">DTAC - SNI-8799-based Data Center Management</h5>
+                            <p class="card-text">
+                                By Group_C2
+                                <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                            </p>
+                            <div class="icons">
+                                <span><i class="fas fa-calendar-alt"></i> 10 Sep 2024 s/d 12 Sep 2024</span>
+                                <span>
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="prices">
+                                        <span class="original-price">Rp. 7.500.000</span>
+                                        <span class="discounted-price">Rp. 6.000.000</span>
+                                        <span class="discount-label">20% off</span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i> (4.5) Penilaian
+                                </span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary mb-4 ms-4 px-4" data-bs-toggle="modal" data-bs-target="#modal6">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+      <!-- Card Section End -->
+  
+      <!-- Modal Section -->
+      <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ms-3" id="exampleModalLabel">Linux Fundamental</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ms-3">
+              <p>
+                Benefits of taking Linux Fundamentals Training:<br><br>
+                - Improve your ability to operate a computer<br>
+                - Opening up new career opportunities in various fields of IT<br>
+                - Become more independent in solving computer problems<br>
+                - Save time and money by managing your own computer    <br>
+              </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary mr-5 px-4" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ms-3" id="exampleModalLabel">Software Defined Data Center with Proxmox</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ms-3">
+              <p>
+                Benefits of taking this training:<br><br>
+                Master SDDC and Proxmox VE concepts: Gain an in-depth understanding of the architecture, components, and functionality of SDDC and Proxmox VE.<br>
+                - Learn how to design and implement SDDC: Discover practical steps to build an SDDC infrastructure that fits your needs.<br>
+                - Master VM and container management: Learn how to create, manage, and maintain VMs and containers with Proxmox VE.<br>
+                - Manage network and storage software-defined
+              </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary mr-5 px-4" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ms-3" id="exampleModalLabel">MikroTik Certified Network Associate (MTCNA)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ms-3">
+              <p>
+                Benefits of Attending MTCNA Training:<br><br>
+                - Increase Career Opportunities: Open the door to broader job opportunities in the networking field, whether as a network technician, network administrator, or even a network consultant.<br>
+                - Strengthen Your Skills: Gain recognition for your expertise in managing MikroTik networks, increasing your value in a competitive job market.<br>
+                - Increase Your Salary: MTCNA certified professionals generally earn higher salaries than their non-certified counterparts.<br>
+                - Broader Opportunities for Advancement: With the knowledge and skills you have acquired, you can continue to develop your career in the complex and challenging field of networking. <br>
+              </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary mr-5 px-4" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header ms-3">
+              <h5 class="modal-title" id="exampleModalLabel">Linux Network Services</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ms-3">
+              <p>
+                Why should you take this training?<br><br>
+                - Extensive Career Opportunities: The demand for Linux experts is constantly increasing in various industry sectors, such as information technology, finance, manufacturing, and government. By taking this training, you increase your competitiveness and chances of getting a better job.<br>
+                - Master the Linux Operating System: Linux is a popular operating system for servers and network devices. By learning Linux, you'll have the flexibility to work with different types of network infrastructure.<br>
+              </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary mr-5 px-4" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header ms-3">
+          <h5 class="modal-title" id="exampleModalLabel">Administering Network Operation Center</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ms-3">
+          <p>
+            Benefits of Participating in Network Operation Center Administering Training: <br><br>
+            - Improve your abilities and skills: Gain the knowledge and skills needed to become a reliable NOC administrator. <br>
+            - Improving your career prospects: NOC expertise is in high demand in a variety of industries, opening up wider and more promising career opportunities.<br>
+            - Increase your value to the company: Help your company achieve a competitive advantage by ensuring a stable and reliable network.<br>
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary mr-5 px-4" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+<div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title ms-3" id="exampleModalLabel">DTAC - SNI-8799-based Data Center Management</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body ms-3">
+      <p>
+        Training Benefits:<br><br>
+        - In-depth understanding of the SNI-8799 national standard for data center management.<br>
+        - Expertise and practical knowledge in managing all aspects of the data center.<br>
+        - Recognized and valuable training certificates to increase competitiveness.<br>
+        - Professional networking with leaders and professionals in the field of data center management.    <br>
+      </p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary mr-5 px-4" data-bs-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3 mb-4 order-lg-1">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">JobQuest</h5>
+              <p class="text-left">"Discover new opportunities, improve your skills, and prepare yourself for a brighter future with JobQuest!"</p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 mt-3 mb-4 order-lg-2 text-center"> 
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+              <ul class="list-unstyled">
+                <li><a href="./home.html" class="text-white" style="text-decoration: none;">Home</a></li>
+                <li><a href="./find.html" class="text-white" style="text-decoration: none;">Job Vacancy Information</a></li>
+                <li><a href="./seminar.html" class="text-white" style="text-decoration: none;">Seminar Information</a></li>
+                <li><a href="./training.html" class="text-white" style="text-decoration: none;">Training Information</a></li>
+              </ul>
+            </div>      
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3 mb-4 order-lg-3 text-right">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+              <ul class="list-unstyled text-left">
+                <li><i class="fas fa-home mr-3"></i>Yogyakarta, Indonesia</li>
+                <li><i class="fas fa-envelope mr-3"></i>JobQuest@gmail.com</li>
+                <li><i class="fas fa-phone mr-3"></i>+92 3162859445</li>
+                <li><i class="fas fa-print mr-3"></i>+01 335 633 77</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="row align-items-center justify-content-center"> 
+            <div class="col-md-7 col-lg-8 text-center">
+              <p>Copyright ©2024 All rights reserved by:
+                <a href="#" class="text-warning">Group_C2</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
