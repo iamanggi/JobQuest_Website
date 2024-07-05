@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar & Training</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style/seminar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesomee/5.14.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navbar-->
+    <section>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">
+                  <img src="Img/logo.png" style="width: 100px; height: auto;" alt="Logo">
+                </a>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="Img/logo.png" style="width: 100px; height: auto;" alt="Logo">
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+
+     <!-- Card Section Seminar -->
+<div id="cardAbout" class="container-fluid vh-100">
+    <h2 class="text-center my-4" style="color: chocolate;">Seminar</h2>
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card-item" id="card1">
+                    <img src="Img/s1.jpeg" class="img-fluid" alt="seminar1" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(175, 203, 37);">UAD Seminar</h5>
+                        <p class="card-text">
+                            By Group_C2
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </p>
+                        <div class="icons">
+                            <span><i class="fas fa-clock"></i> 07.30-12.30 WIB</span>
+                            <span><i class="fa-solid fa-users"></i> Umum</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>9 Juli 2024</span>   
+                            <span><i class="fa-solid fa-location-dot"></i>Aph. K.4 UAD</span>                      
+                            <span><i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i>(4.5) Penilaian</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3 ms-3 px-3" data-bs-toggle="modal" data-bs-target="#modal1">Detail</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-item" id="card2">
+                    <img src="Img/s2.jpeg" class="img-fluid" alt="seminar2" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(175, 203, 37);">UMY Seminar</h5>
+                        <p class="card-text">
+                            By Group_C2
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </p>
+                        <div class="icons">
+                            <span><i class="fas fa-clock"></i> 09.00-11.00 WIB</span>
+                            <span><i class="fa-solid fa-users"></i> Umum</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>5 Juli 2024</span>  
+                            <span><i class="fa-solid fa-location-dot"></i>Zoom </span>                           
+                            <span><i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i>(4.7) Penilaian</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3 ms-3 px-3" data-bs-toggle="modal" data-bs-target="#modal2">Detail</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-item" id="card3">
+                    <img src="Img/s3.jpeg" class="img-fluid" alt="seminar3" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(175, 203, 37);">UGM Seminar</h5>
+                        <p class="card-text">
+                            By Group_C2
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </p>
+                        <div class="icons">
+                            <span><i class="fas fa-clock"></i>08.00-13.00 WIB</span>
+                            <span><i class="fa-solid fa-users"></i> Umum</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>11 Juli 2024</span>  
+                            <span><i class="fa-solid fa-location-dot"></i>Arsip UGM</span>                          
+                            <span><i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i>(4.6) Penilaian</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3 ms-3 px-3" data-bs-toggle="modal" data-bs-target="#modal3">Detail</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Card Section Trainer -->
+<div id="cardAbout" class="container-fluid vh-100">
+    <h2 class="text-center my-4" style="color: chocolate;">Training for Trainer</h2>
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card-item" id="card4">
+                    <img src="Img/T4.jpeg" class="img-fluid" alt="trainer1" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(204, 141, 22);">Proliner</h5>
+                        <p class="card-text">
+                            By Group_C2
+                            <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                        </p>
+                        <div class="icons">
+                            <span><i class="fas fa-clock"></i>Follow up </span>
+                            <span><i class="fa-solid fa-users"></i> Umum</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>10-11 Juni 2024</span>
+                            <span><i class="fa-solid fa-location-dot"></i>Zoom CFDS UGM</span>                           
+                            <span><i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i>(4.8) Penilaian</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3 ms-3 px-3" data-bs-toggle="modal" data-bs-target="#modal4">Detail</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-item" id="card5">
+                    <img src="Img/t2.jpeg" class="img-fluid" alt="trainer2" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(204, 141, 22);">Mini Bootcamp</h5>
+                        <p class="card-text">
+                            By Group_C2
+                            <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                        </p>
+                        <div class="icons">
+                            <span><i class="fas fa-clock"></i>Adapt </span>
+                            <span><i class="fa-solid fa-users"></i> Umum</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>06-009 Juli 2024</span>
+                            <span><i class="fa-solid fa-location-dot"></i>Zoom </span>    
+                            <span><i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i>(4.6) Penilaian</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3 ms-3 px-3" data-bs-toggle="modal" data-bs-target="#modal5">Detail</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-item" id="card6">
+                    <img src="Img/t3.jpeg" class="img-fluid" alt="trainer3" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(204, 141, 22);">KopmaUGM</h5>
+                        <p class="card-text">
+                            By Group_C2
+                            <i class="fa-solid fa-thumbs-up" style="color: #11023d"></i>
+                        </p>
+                        <div class="icons">
+                            <span><i class="fas fa-clock"></i>09.00-Selesai WIB </span>
+                            <span><i class="fa-solid fa-users"></i> Umum</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>23 Juni 2024</span>
+                            <span><i class="fa-solid fa-location-dot"></i>R. Koperasi UGM</span>    
+                            <span><i class="fa-regular fa-star-half-stroke" style="color: rgb(240, 159, 29)"></i>(4.7) Penilaian</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3 ms-3 px-3" data-bs-toggle="modal" data-bs-target="#modal6">Detail</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Section -->
+<!-- Modal for S1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail UAD Seminar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Seminar ini akan diadakan pada Selasa, 09 Juli 2024, yang dilaksanakan di Amphitarium Kamous 4 UAD.
+                     Seminar ini diselenggarakan untuk menawarkan berbagai manfaat bagi para peserta, termasuk pengetahuan dan relasi.
+                 </p>
+                 <p>Mengapa Anda harus ikut serta dalam seminar ini?</p>
+                 <h5>
+                     <ol>
+                         <li>Pengetahuan: Dapatkan ilmu berharga dari para ahli dan praktisi di bidangnya.</li>
+                         <li>Relasi: Kesempatan untuk memperluas jaringan profesional Anda dengan bertemu dan berinteraksi dengan peserta lainnya.</li>                         
+                     </ol>
+                 </h5>
+                 <p>
+                    Untuk pendaftaran, kunjungi tautan berikut: <a href="https://bit.ly/PendaftaranPCP24">https://bit.ly/PendaftaranPCP24</a>
+                </p>
+                 
+                 <p>
+                     Jangan lewatkan kesempatan ini untuk meningkatkan keterampilan Anda dan bergabung dengan komunitas yang inspiratif!
+                 </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Paket Seru -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail Paket Seru</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Seminar ini akan diadakan pada  Jum'at, 05 Juli 2024,  online via Zoom.
+                     International Webinar ini diselenggarakan untuk menawarkan berbagai manfaat bagi para peserta, termasuk pengetahuan dan relasi.
+                 </p>
+                 <p>Mengapa Anda harus ikut serta dalam seminar ini?</p>
+                 <h5>
+                     <ol>
+                         <li>Pengetahuan: Dapatkan ilmu berharga dari para ahli dan praktisi di bidangnya.</li>
+                         <li>Relasi: Kesempatan untuk memperluas jaringan profesional Anda dengan bertemu dan berinteraksi dengan peserta lainnya.</li>                         
+                     </ol>
+                 </h5>
+                 <p>
+                    Untuk registrasi, kunjungi tautan berikut: <a href="bit.ly/Webinar-Dr-Mohammad">bit.ly/Webinar-Dr-Mohammad</a>
+                </p>
+                 
+                 <p>
+                     Jangan lewatkan kesempatan ini untuk meningkatkan keterampilan Anda dan bergabung dengan komunitas yang inspiratif!
+                 </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for s3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail UGM Seminar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Seminar ini akan diadakan pada Kamis, 11 Juli 2024,  yang dilaksanakan di Ruang Seminar, Gd L1 Lantai 2 Perpustakaan dan Arsip UGM.
+                     Seminar Nasional ini diselenggarakan untuk menawarkan berbagai manfaat bagi para peserta, termasuk pengetahuan dan relasi.
+                 </p>
+                 <p>Mengapa Anda harus ikut serta dalam seminar ini?</p>
+                 <h5>
+                     <ol>
+                         <li>Pengetahuan: Dapatkan ilmu berharga dari para ahli dan praktisi di bidangnya.</li>
+                         <li>Relasi: Kesempatan untuk memperluas jaringan profesional Anda dengan bertemu dan berinteraksi dengan peserta lainnya.</li>                         
+                     </ol>
+                 </h5>         
+                 <p>
+                     Jangan lewatkan kesempatan ini untuk meningkatkan keterampilan Anda dan bergabung dengan komunitas yang inspiratif!
+                 </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for T1 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail Trainer Proliner</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Pelatihan ini akan diadakan pada 10 sampai 11 Juni 2024,  online via Zoom CFDS UGM.
+                     Acara ini diselenggarakan untuk menawarkan berbagai manfaat bagi para peserta, termasuk pengetahuan dan relasi.
+                 </p>
+                 <p>Mengapa Anda harus ikut serta dalam seminar ini?</p>
+                 <h5>
+                     <ol>
+                         <li>Pengetahuan: Dapatkan ilmu berharga dari para ahli dan praktisi di bidangnya terutama literasi digital nasional.</li>
+                         <li>Relasi: Kesempatan untuk memperluas jaringan profesional Anda dengan bertemu dan berinteraksi dengan peserta lainnya.</li>                         
+                     </ol>
+                 </h5>
+                 <p>
+                    Untuk registrasi, kunjungi tautan berikut: <a href="ugm.id/proliner10">ugm.id/proliner10</a>
+                </p>
+                 
+                 <p>
+                     Jangan lewatkan kesempatan ini untuk meningkatkan keterampilan Anda dan bergabung dengan komunitas yang inspiratif!
+                 </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for T2 -->
+<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail Mini Bootcamp</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Pelatihan ini akan diadakan pada Minggu, 06 sampai 09 Juli 2024, mulai pukul 13.00 - 15.30 WIB untuk tanggal 06 & 07. Dan 19.00 - 21.30 WIB untuk tanggal 08 & 09 Juli 2024 dilaksanakan secara online melalui Zoom.
+                     Acara ini diselenggarakan untuk menawarkan berbagai manfaat bagi para peserta, termasuk pengetahuan, relasi, dan sertifikat peserta.
+                 </p>
+                 <p>Mengapa Anda harus ikut serta dalam seminar ini?</p>
+                 <h5>
+                     <ol>
+                         <li>Pengetahuan: Dapatkan ilmu berharga dari para ahli dan praktisi di bidangnya khususnya UI/UX.</li>
+                         <li>Relasi: Kesempatan untuk memperluas jaringan profesional Anda dengan bertemu dan berinteraksi dengan peserta lainnya.</li>
+                         <li>Sertifikat Peserta: Tambahkan sertifikat ini ke dalam portofolio Anda untuk meningkatkan kredibilitas dan daya saing Anda.</li>
+                     </ol>
+                 </h5>
+                 
+                 <p>
+                     Jangan lewatkan kesempatan ini untuk meningkatkan keterampilan Anda dan bergabung dengan komunitas yang inspiratif!
+                 </p>
+                
+            </div>
+        </div>
+    </div>
+</div><div class="modal-body">
+    
+    
+</div>
+
+<!-- Modal for T3-->
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail KOPMAUGM</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Seminar "Training for Trainer" ini akan diadakan pada Minggu, 23 Juni 2024, mulai pukul 09.00 WIB hingga selesai di Ruang Ketua Umum Koperasi Mahasiswa UGM.
+                    Acara ini diselenggarakan oleh KOPMA UGM dan menawarkan berbagai manfaat bagi para peserta, termasuk pengetahuan, relasi, dan sertifikat peserta.
+                </p>
+                <p>Mengapa Anda harus ikut serta dalam seminar ini?</p>
+                <h5>
+                    <ol>
+                        <li>Pengetahuan: Dapatkan ilmu berharga dari para ahli dan praktisi di bidangnya.</li>
+                        <li>Relasi: Kesempatan untuk memperluas jaringan profesional Anda dengan bertemu dan berinteraksi dengan peserta lainnya.</li>
+                        <li>Sertifikat Peserta: Tambahkan sertifikat ini ke dalam portofolio Anda untuk meningkatkan kredibilitas dan daya saing Anda.</li>
+                    </ol>
+                </h5>
+                <p>
+                    Untuk mendaftar, kunjungi tautan berikut: <a href="https://bit.ly/PendaftaranTrainingforTrainer1">https://bit.ly/PendaftaranTrainingforTrainer1</a>
+                </p>
+                <p>
+                    Jangan lewatkan kesempatan ini untuk meningkatkan keterampilan Anda dan bergabung dengan komunitas yang inspiratif!
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--Footer-->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3 mb-4 order-lg-1">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">JobQuest</h5>
+              <p class="text-left">"Discover new opportunities, improve your skills, and prepare yourself for a brighter future with JobQuest!"</p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 mt-3 mb-4 order-lg-2 text-center"> 
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white" style="text-decoration: none;">Tips for Finding a Job</a></li>
+                <li><a href="#" class="text-white" style="text-decoration: none;">Seminar and Training Info</a></li>
+                <li><a href="#" class="text-white" style="text-decoration: none;">Jobs</a></li>
+              </ul>
+            </div>      
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3 mb-4 order-lg-3 text-right">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+              <ul class="list-unstyled text-left">
+                <li><i class="fas fa-home mr-3"></i>Yogyakarta, Indonesia</li>
+                <li><i class="fas fa-envelope mr-3"></i>JobQuest@gmail.com</li>
+                <li><i class="fas fa-phone mr-3"></i>+92 3162859445</li>
+                <li><i class="fas fa-print mr-3"></i>+01 335 633 77</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="row align-items-center justify-content-center"> 
+            <div class="col-md-7 col-lg-8 text-center">
+              <p>Copyright ©2024 All rights reserved by:
+                <a href="#" class="text-warning">JobQuest</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <!-- JS Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+<!--untuk feather icons-->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+</body>
+</html>

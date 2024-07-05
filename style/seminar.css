@@ -1,0 +1,215 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: white;
+  }
+  
+  .navbar {
+    background-color: #d5d4d4;
+    height: 80px;
+  }
+  
+  .navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color:#666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active{
+    color: #000000;
+}
+
+@media (min-width:991px){
+    .nav-link::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #9F2634;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }}
+  
+
+  /* Card Section */
+ /* Section Container */
+#cardAbout {
+    background: #ffffff;
+    color: #061e06;
+    padding: 50px 0;
+}
+
+/* Title Styles */
+#cardAbout h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Card Container */
+.d-flex {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
+    gap: 30px; 
+    max-width:  1200px; /* Optional: Set a max-width for better centering */
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+/* Card Styles */
+.card-item {
+    background-color: #ffffff;
+    border: 2px solid #68696b;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(242, 239, 239, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(35, 34, 34, 0.966);
+}
+
+.card-body {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+   
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  
+    
+}
+
+
+
+.icons i {
+    margin-right: 0.5rem;
+    color: #09214f;
+}
+
+.btn-primary {
+    background-color: #22303f;
+    border: none;
+    transition: background-color 0.3s;
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+.btn-primary:hover {
+    background-color: #022d6c;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #11023d;
+    color: #f8faf8;
+    border-radius: 15px;
+    border: 2px solid #1e6d71;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Additional Spacing Between Sections */
+.container-fluid {
+    margin-bottom: 50px;
+}
+
+/* Ensure Even Spacing for Columns */
+.col-md-3 {
+    margin-bottom: 30px;
+}
+
+/* Responsive Fixes */
+@media (min-width: 768px) {
+    .row {
+        margin-left: auto;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        margin-bottom: 0;
+    }
+}
+
+/* Image Styles */
+.img-fluid {
+    width: 95%;
+    height: auto;
+    max-height: 500px; /* Set the maximum height for the image */
+    object-fit: cover;
+    border-radius: 10px; /* Add some border radius to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for aesthetic effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.img-fluid:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(80, 78, 75, 0.605); /* Increase shadow on hover */
+    
+}
+
+
+  
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .icons span {
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons i {
+    margin-right: 0.3rem;
+  }
+  
+ 
