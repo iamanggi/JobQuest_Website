@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesomee/5.14.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesomee/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>JobQuest</title>
 </head>
 <body>
@@ -31,7 +34,7 @@
                   <a class="nav-link mx-lg-2" href="#About">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#Video">Videos</a>
+                  <a class="nav-link mx-lg-2" href="#Learning">Learning</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-lg-2" href="#Contact">Contact Us</a>
@@ -60,7 +63,7 @@
       <div class="carousel-item active">
         <img src="Img/BG2.jpg" class="d-block w-100" alt="">
         <div class="carousel-caption ">
-          <h5 class="fw-bold">Tips for Finding a Job</h5>
+          <h5 class="fw-bold">Job Vacancy Information</h5>
           <p>Get the best tips and tricks for finding a job that suits you.</p>
           <p><a href="./find.html" class="btn btn-warning mt-3">Learn More</a></p>
         </div>
@@ -68,17 +71,17 @@
       <div class="carousel-item">
         <img src="Img/BG3.jpg" class="d-block w-100" alt=".">
         <div class="carousel-caption">
-          <h5 class="fw-bold">Seminar and Training Info</h5>
+          <h5 class="fw-bold">Seminar Information</h5>
           <p>Find the latest information on seminars and trainings that can improve your skills.</p>
-          <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+          <p><a href="./seminar.html" class="btn btn-warning mt-3">Learn More</a></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="Img/BG1.jpg" class="d-block w-100" alt="">
         <div class="carousel-caption">
-          <h5 class="fw-bold">Jobs</h5>
+          <h5 class="fw-bold">Training Information</h5>
           <p>Browse a wide range of job openings from top companies around the world.</p>
-          <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+          <p><a href="./training.html" class="btn btn-warning mt-3">Learn More</a></p>
         </div>
       </div>
     </div>
@@ -116,15 +119,52 @@
   </div>
 </section>
 
-<section id="Video">
-  <div class="video-container d-flex justify-content-center align-items-center">
-      <div class="col-lg-7">
-        <video src="Img/Video.mp4" controls class="w-100">
-          Your browser does not support the video tag.
-        </video>
+<section id="Learning" class="vh-100 d-flex">
+<div class="container-fluid mt-4">
+  <div class="d-flex justify-content-center align-items-center h-100 w-100 flex-column">
+      <div class="row mx-5">
+          <!-- Row 1 -->
+          <div class="col-md-4 mb-3 ">
+              <div class="card-item" id="card1">
+                  <img src="./Img/job2.jpg" class="img-fluid" alt="pythonlogo"/>
+                  <div class="card-body">
+                      <h5 class="title">Job Vacancy Information</h5>
+                      <p class="text">
+                        provide information about job vacancies in the IT world  
+                      </p>
+                  </div>
+                  <a href="./find.html" class="btn btn-primary mb-4 ms-4 px-4 btn-lg">Detail</a>
+              </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+              <div class="card-item" id="card2">
+                  <img src="./Img/seminar.jpg" class="img-fluid" alt="pythonlogo"/>
+                  <div class="card-body">
+                      <h5 class="title ">Seminar Information</h5>
+                      <p class="text">
+                        provide information about seminars in the IT world 
+                      </p>
+                  </div >
+                  <a href="./seminar.html" class="btn btn-primary mb-4 ms-4 px-4 btn-lg">Detail</a>
+              </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+              <div class="card-item" id="card3">
+                  <img src="./Img/training.jpg" class="img-fluid" alt="pythonlogo"/>
+                  <div class="card-body">
+                      <h5 class="title">Training Information</h5>
+                      <p class="text">
+                        provide information about trainings in the IT world 
+                      </p>
+                  </div>
+                  <a href="./training.html" class="btn btn-primary mb-4 ms-4 px-4 btn-lg">Detail</a>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
+</div>
 </section>
 
 <section id="Contact" class="contact-area">
@@ -137,7 +177,7 @@
       </div>
       <div class="col-sm-12 col-lg-6">
         <div class="right">
-          <i class="fa fa-caret-left"></i>
+          
           <form>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Full Name</label>
@@ -169,9 +209,10 @@
       <div class="col-md-6 col-lg-6 col-xl-6 mt-3 mb-4 order-lg-2 text-center"> 
         <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-white" style="text-decoration: none;">Tips for Finding a Job</a></li>
-          <li><a href="#" class="text-white" style="text-decoration: none;">Seminar and Training Info</a></li>
-          <li><a href="#" class="text-white" style="text-decoration: none;">Jobs</a></li>
+          <li><a href="./home.html" class="text-white" style="text-decoration: none;">Home</a></li>
+          <li><a href="./find.html" class="text-white" style="text-decoration: none;">Job Vacancy Information</a></li>
+          <li><a href="./seminar.html" class="text-white" style="text-decoration: none;">Seminar Information</a></li>
+          <li><a href="./training.html" class="text-white" style="text-decoration: none;">Training Information</a></li>
         </ul>
       </div>      
       <div class="col-md-3 col-lg-3 col-xl-3 mt-3 mb-4 order-lg-3 text-right">
@@ -188,7 +229,7 @@
     <div class="row align-items-center justify-content-center"> 
       <div class="col-md-7 col-lg-8 text-center">
         <p>Copyright ©2024 All rights reserved by:
-          <a href="#" class="text-warning">JobQuest</a>
+          <a href="#" class="text-warning">Group_C2</a>
         </p>
       </div>
     </div>

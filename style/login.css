@@ -18,8 +18,8 @@ body, html {
 }
 
 .login {
-    width: 340px;
-    height: 400px;
+    width: 400px;
+    height:auto;
     background: #2c2c2c;
     padding: 47px;
     padding-bottom: 57px;
@@ -35,7 +35,7 @@ body, html {
     display: block;
     border: none;
     outline: none;
-    width: 100%;
+    width: 90%;
     padding: 13px 18px;
     margin: 20px 0 0 0;
     font-size: 0.8em;
@@ -68,13 +68,16 @@ body, html {
     top: -35px;
     display: block;
     margin-bottom: -0px;
-    font-size: 1.3em;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .btn {
     background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
     color: #fff;
     padding: 16px !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .btn:hover {
